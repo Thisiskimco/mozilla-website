@@ -3,18 +3,18 @@ myHeading.textContent = "Hello world!";
 
 const myImage = document.querySelector("img");
 
-myImage.onclick = () => {
+myImage.onclick = function() {
   const mySrc = myImage.getAttribute("src");
   if (mySrc === "media/Firefox-icon.png") {
     myImage.setAttribute("src", "media/firefox2.png");
   } else {
-    myImage.setAttribute("src", "media/firefox2.jpeg");
+    myImage.setAttribute("src", "media/Firefox-icon.png");
   }
 };
 
 
 let myButton = document.querySelector("button");
-let myHeading = document.querySelector("h1");
+//let myHeading = document.querySelector("h1");
 
 
 function setUserName() {
